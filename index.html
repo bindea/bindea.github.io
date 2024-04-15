@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ビンデア 公式サイト</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol xmlns="http://www.w3.org/2000/svg" id="angle-right" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M12.969 4.281L11.53 5.72L21.812 16l-10.28 10.281l1.437 1.438l11-11l.687-.719l-.687-.719z"/>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="angle-left" viewBox="0 0 32 32">
+        <path fill="currentColor" d="m19.031 4.281l-11 11l-.687.719l.687.719l11 11l1.438-1.438L10.187 16L20.47 5.719z"/>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="chevron-down" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M7.41 8.58L12 13.17l4.59-4.59L18 10l-6 6l-6-6l1.41-1.42Z"/>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-right" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M18.719 6.781L17.28 8.22L24.063 15H4v2h20.063l-6.782 6.781l1.438 1.438l8.5-8.5l.687-.719l-.687-.719z"/>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="arrow-left" viewBox="0 0 32 32">
+        <path fill="currentColor" d="m13.281 6.781l-8.5 8.5l-.687.719l.687.719l8.5 8.5l1.438-1.438L7.938 17H28v-2H7.937l6.782-6.781z"/>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="play" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M8 5.14v14l11-7l-11-7Z"/>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="facebook" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="youtube" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M29.41 9.26a3.5 3.5 0 0 0-2.47-2.47C24.76 6.2 16 6.2 16 6.2s-8.76 0-10.94.59a3.5 3.5 0 0 0-2.47 2.47A36.13 36.13 0 0 0 2 16a36.13 36.13 0 0 0 .59 6.74a3.5 3.5 0 0 0 2.47 2.47c2.18.59 10.94.59 10.94.59s8.76 0 10.94-.59a3.5 3.5 0 0 0 2.47-2.47A36.13 36.13 0 0 0 30 16a36.13 36.13 0 0 0-.59-6.74ZM13.2 20.2v-8.4l7.27 4.2Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="twitter" viewBox="0 0 256 256">
+        <path fill="currentColor" d="m245.66 77.66l-29.9 29.9C209.72 177.58 150.67 232 80 232c-14.52 0-26.49-2.3-35.58-6.84c-7.33-3.67-10.33-7.6-11.08-8.72a8 8 0 0 1 3.85-11.93c.26-.1 24.24-9.31 39.47-26.84a110.93 110.93 0 0 1-21.88-24.2c-12.4-18.41-26.28-50.39-22-98.18a8 8 0 0 1 13.65-4.92c.35.35 33.28 33.1 73.54 43.72V88a47.87 47.87 0 0 1 14.36-34.3A46.87 46.87 0 0 1 168.1 40a48.66 48.66 0 0 1 41.47 24H240a8 8 0 0 1 5.66 13.66Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="instagram" viewBox="0 0 256 256">
+        <path fill="currentColor" d="M128 80a48 48 0 1 0 48 48a48.05 48.05 0 0 0-48-48Zm0 80a32 32 0 1 1 32-32a32 32 0 0 1-32 32Zm48-136H80a56.06 56.06 0 0 0-56 56v96a56.06 56.06 0 0 0 56 56h96a56.06 56.06 0 0 0 56-56V80a56.06 56.06 0 0 0-56-56Zm40 152a40 40 0 0 1-40 40H80a40 40 0 0 1-40-40V80a40 40 0 0 1 40-40h96a40 40 0 0 1 40 40ZM192 76a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="linkedin" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z" />
+      </symbol>
+    </svg>
+    
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+    <header id="header" class="site-header">
+      <nav id="header-nav" class="navbar navbar-expand-lg px-3">
+        <div class="container">
+          <a class="navbar-brand d-lg-none" href="index.html">
+            <img src="images/main-logo.png" class="logo">
+          </a>
+          <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
+            <div class="offcanvas-header px-4 pb-0">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/main-logo.png" class="logo">
+              </a>
+              <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
+            </div>
+
+
+
+
+            <!-- 初め-->
+            <div class="offcanvas-body">
+              <ul id="navbar" class="navbar-nav w-100 d-flex justify-content-between align-items-center">
+                <a class="navbar-brand d-none d-lg-block me-0" href="index.html">
+                  <img src="images/main-logo.png" class="logo">
+                </a>
+
+                <ul class="list-unstyled d-lg-flex justify-content-between align-items-center">
+                  <li class="nav-item">
+                    <a class="nav-link ms-0" href="about.html">BINDEA</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ms-0" href="shop.html">商品一覧</a>
+                  </li>
+
+                </ul>
+              </ul>
+            </div>
+            <!-- 終わり-->
+
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+
+    <section id="billboard" class="position-relative overflow-hidden">
+      <div class="swiper main-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image: url(images/banner-image.jpg); background-size: cover; background-repeat: no-repeat; height: 100vh; background-position: center;">
+            <div class="container ">
+              <div class="row">
+                <div class="offset-md-1 col-md-6">
+                  <div class="banner-content">
+                    <h3>コードレスクリーナー</h3>
+                    <p class="fs-3">デザインと性能を更に進化させた新モデルです。<br>
+                      吸引仕事率のアップはもちろん、<br>
+                      フロアノズルの可動範囲を<br>
+                      広げ狭い場所でも使いやすくなりました。</p>
+                    <a href="bindea-sjb.html" class="btn">商品詳細ページへ</a>
+                  </div>
+                </div>
+                <div class="col-md-5"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url(images/banner-image1.jpg); background-size: cover; background-repeat: no-repeat; height: 100vh; background-position: center;">
+            <div class="container">
+              <div class="row">
+                <div class="offset-md-6 col-md-6">
+                  <div class="banner-content">
+                    <h3>美顔器</h3>
+                    <p class="fs-3">筋肉に微弱の電気を与えることで表情筋を刺激するのが特徴。筋肉運動に近い状態を作り出せるのがメリットです。むくみが気になる方に適しています。  </p>
+                    <a href="bindea-brkd.html" class="btn">商品詳細ページへ</a>
+                  </div>
+                </div>
+                <div class="col-md-5"></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide" style="background-image: url(images/banner-image2.jpg); background-size: cover; background-repeat: no-repeat; height: 100vh; background-position: center;">
+            <div class="container">
+              <div class="row">
+                <div class="offset-md-1 col-md-6">
+                  <div class="banner-content">
+                    <h3>コーヒーメーカー</h3>
+                    <p class="fs-3">お湯の量や注ぎ方をコーヒーメーカーが管理しているので失敗が少なく、毎回おいしいコーヒーが楽しめます。濃度調節機能や湯温調節機能がついているものなら自分好みの味わいに変えられます。</p>
+                    <a href="bindea-khb.html" class="btn">商品詳細ページへ</a>
+                  </div>
+                </div>
+                <div class="col-md-5"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-slider-pagination position-absolute text-center"></div>
+      </div>
+    </section>
+
+
+    <section id="about" class="padding-xlarge">
+      <div class="container">
+        <div class="row">
+          <div class="offset-md-2 col-md-8">
+            <span class="title-accent fs-6 text-uppercase" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">お知らせ</span>
+            <p data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1800" data-aos-once="true">
+              <br><br><br>【重要】能登半島地震の影響によるお荷物のお届けについて<br>
+              <br>
+              1月1日に発生した「令和6年能登半島地震」によりお荷物のお届けに遅れが生じております。<br>
+              お客様にはご迷惑をおかけいたしますが、何卒ご了承いただきますようお願い申し上げます。<br>
+              <br>
+              ■お届け業務を停止させていただく地域<br>
+              ・石川県の一部、富山県の一部において、集配停止により、お荷物のお届けを停止させていただきます。<br>
+              <br>
+              ■お荷物のお届けに遅れが生じる地域<br>
+              ・全国から石川県の一部、富山県の一部あて<br>
+              ・石川県の一部、富山県の一部から全国あて<br>
+              <br>
+              <br>
+              また北陸方面のお客様に置かれましては納品までに時間がかかる可能性、および、指定日通りに納品されない可能性がございます。<br>
+              予めご了承ください。<br>
+              -------------------------------------</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="products" class="product-store position-relative">
+      <div class="container display-header d-flex flex-wrap justify-content-between pb-4">
+        <h3 class="mt-3">売れ筋商品</h3>
+        <div class="btn-right d-flex flex-wrap align-items-center">
+          <div class="swiper-buttons">
+            <button class="swiper-prev product-carousel-prev me-2">
+              <svg width="41" height="41"><use xlink:href="#angle-left"></use></svg>
+            </button>
+            <button class="swiper-next product-carousel-next">
+              <svg width="41" height="41"><use xlink:href="#angle-right"></use></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper product-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="product-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="images/bindea-sji2.jpg" alt="product-item" class="img-fluid zoom-in">
+                <div class="cart-concern position-absolute">
+
+                </div>
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-3 text-capitalize">
+                  <a href="bindea-sji.html">コードレスクリーナーSji</a>
+                </h5>
+                <span class="item-price text-primary fs-3 fw-light">¥14,000（税込）</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="images/bindea-ksa.jpg" alt="product-item" class="img-fluid zoom-in">
+
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-3 text-capitalize">
+                  <a href="bindea-ksa.html">加湿器ksa</a>
+                </h5>
+                <span class="item-price text-primary fs-3 fw-light">¥11,000（税込）</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="images/bindea-ksb.jpg" alt="product-item" class="img-fluid zoom-in">
+ 
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-3 text-capitalize">
+                  <a href="bindea-ksb.html">加湿器ksb</a>
+                </h5>
+                <span class="item-price text-primary fs-3 fw-light">¥14,000（税込）</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="images/bindea-arc.png" alt="product-item" class="img-fluid zoom-in">
+ 
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-3 text-capitalize">
+                  <a href="bindea-arc.html">スチームアイロンarc</a>
+                </h5>
+                <span class="item-price text-primary fs-3 fw-light">¥7,000（税込）</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="images/bindea-ara.jpg" alt="product-item" class="img-fluid zoom-in">
+ 
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-3 text-capitalize">
+                  <a href="bindea-ara.html">スチームアイロンara</a>
+                </h5>
+                <span class="item-price text-primary fs-3 fw-light">¥8,400（税込）</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="images/bindea-arb.jpg" alt="product-item" class="img-fluid zoom-in">
+ 
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-3 text-capitalize">
+                  <a href="bindea-arb.html">スチームアイロンarb</a>
+                </h5>
+                <span class="item-price text-primary fs-3 fw-light">¥6,600（税込）</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="images/bindea-ktd.jpg" alt="product-item" class="img-fluid zoom-in">
+ 
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-3 text-capitalize">
+                  <a href="bindea-ktd.html">電気ケトルktd</a>
+                </h5>
+                <span class="item-price text-primary fs-3 fw-light">¥9,600（税込）</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card position-relative">
+              <div class="image-holder zoom-effect">
+                <img src="images/bindea-ktc.jpg" alt="product-item" class="img-fluid zoom-in">
+ 
+              </div>
+              <div class="card-detail text-center pt-3 pb-2">
+                <h5 class="card-title fs-3 text-capitalize">
+                  <a href="bindea-ktc.html">電気ケトルktc</a>
+                </h5>
+                <span class="item-price text-primary fs-3 fw-light">¥12,600（税込）</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+
+
+    <section id="faqs" class="padding-xlarge">
+      <div class="container">
+        <div class="row">
+          <div class="offset-md-2 col-md-8">
+            <h3 class="text-center mb-5" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">よくあるご質問</h3>
+            <div class="accordion accordion-flush" id="accordionFlush" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1500" data-aos-once="true">
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="flush-headingOne3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                    ご注文方法
+                  </button>
+                </h4>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>受付は、当店のオンラインショップからのご注文となります。<br>
+                      <br>
+                      お電話での受付は、デロンギ・ジャパン お客様サポートセンターのフリーダイヤルにて承っております。お電話でのご注文の場合、当オンラインショップとは送料が異なります。お電話の場合、送料一律770円（税込）となります。<br>
+                      <br>
+                      送料のお得な、当オンラインショップでのご注文をお待ちしております。<br></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="flush-headingTwo3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseTwo">
+                    ご注文内容の確認方法
+                  </button>
+                </h4>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>「注文確定のお知らせ」の受注完了メールが届きます。<br><br>
+                      件名は「【注文確定のお知らせ】ご注文ありがとうございます（自動送信メール）」です。ご注文後1時間以内に配信しております。<br><br>
+                      また会員登録をしていただきますと、最大120日までのご注文履歴の照会が可能となります。<br></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="flush-headingThree3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="true" aria-controls="flush-collapseThree">
+                    配達日の指定はできますか
+                  </button>
+                </h4>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>ご注文の際、ショッピングカート内で選択可能日が表示されます。その範囲の中で「お届け希望日」をご指定いただけます。ご不在の場合は「不在届」をポスティングさせていただきます。<br><br>
+                      お客様より直接、ヤマト運輸へご連絡していただき、再配達の手続きを行なっていただきますようお願い申し上げます。（再配達のお申込みは「ヤマト運輸ホームページ」からも可能です）<br></p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="accordion-item">
+                <h4 class="accordion-header" id="flush-headingFour3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="true" aria-controls="flush-collapseFour">
+                    配送状況を確認したい（出荷案内メール）
+                  </button>
+                </h4>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>ご注文いただいた商品の発送は「出荷案内メール」にてお知らせします。メールに記載されているヤマト運輸のお荷物番号を、ヤマト運輸ホームページの「クロネコヤマトの荷物お問い合わせシステム」から照会すると、<br><br>
+                      配送状況をご確認いただけます。また、再配達をご希望される場合も、ヤマト運輸のホームページよりご依頼いただけます。<br></p>
+                  </div>
+                </div>
+              </div>
+    
+      
+            </div>      
+          </div>
+        </div>
+      </div>
+    </section>    
+
+
+
+    <!-- 初め-->
+    <footer id="footer" class="overflow-hidden padding-xlarge pb-0">
+      <div class="container">
+        <div class="row">
+          <div class="footer-top-area pb-5">
+            <div class="row d-flex flex-wrap justify-content-between">
+              <div class="col-lg-3 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true">
+                <div class="footer-menu">
+                  <img src="images/main-logo.png" alt="logo" class="mb-2">
+                </div>
+              </div>
+              <div class="col-lg-2 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1200" data-aos-once="true">
+                <div class="footer-menu">
+                  <h4 class="widget-title pb-2">about ビンデア</h4>
+                  <ul class="menu-list list-unstyled">
+                    <li class="menu-item pb-2">
+                      <a href="shop.html">商品一覧</a>
+                    </li>
+                    <li class="menu-item pb-2">
+                      <a href="contact.html">サポート</a>
+                    </li>
+                    <li class="menu-item pb-2">
+                      <a href="rules.html">ご利用規約</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </footer>
+    <div id="footer-bottom">
+      <div class="container">
+        <div class="row d-flex flex-wrap justify-content-between">
+          <div class="col-12">
+            <div class="copyright">
+              <p>サイトは永鑫株式会社が運営するビンデア公式サイトです。掲載内容の無断転載及び配信は著作権侵害となります。<br>Copyright © Eishin Co., Ltd. All rights reserved.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- おわり-->
+
+
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+
+          <div class="modal-content">
+            
+              <div class="modal-body">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="bi" width="40" height="40"><use xlink:href="#close-sharp"></use></svg></button>
+                  <div class="ratio ratio-16x9">
+                    <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                  </div>
+              </div>
+
+          </div>
+
+      </div>
+    </div>
+
+
+
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
