@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>会社概要</title>
+    <title>bindea-ara</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,6 +23,9 @@
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+        <path fill="currentColor" d="M19 3C13.488 3 9 7.488 9 13c0 2.395.84 4.59 2.25 6.313L3.281 27.28l1.439 1.44l7.968-7.969A9.922 9.922 0 0 0 19 23c5.512 0 10-4.488 10-10S24.512 3 19 3zm0 2c4.43 0 8 3.57 8 8s-3.57 8-8 8s-8-3.57-8-8s3.57-8 8-8z" />
+      </symbol>
       <symbol xmlns="http://www.w3.org/2000/svg" id="angle-right" viewBox="0 0 32 32">
         <path fill="currentColor" d="M12.969 4.281L11.53 5.72L21.812 16l-10.28 10.281l1.437 1.438l11-11l.687-.719l-.687-.719z"/>
       </symbol>
@@ -71,11 +74,23 @@
         <path fill="currentColor" d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z" />
         <path fill="currentColor" d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z" />
       </symbol>
+      <symbol id="star-fill" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+        <path fill="currentColor" d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+      </symbol>
+      <symbol id="star-empty" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+        <path fill="currentColor" d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+      </symbol>
+      <symbol id="star-half" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+        <path fill="currentColor" d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z" />
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="plus" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M19 11h-6V5a1 1 0 0 0-2 0v6H5a1 1 0 0 0 0 2h6v6a1 1 0 0 0 2 0v-6h6a1 1 0 0 0 0-2Z"/>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" id="minus" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M19 11H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2Z"/>
+      </symbol>
     </svg>
     
-
-
-
     <div id="preloader">
       <div id="loader"></div>
     </div>
@@ -83,30 +98,28 @@
       <nav id="header-nav" class="navbar navbar-expand-lg px-3">
         <div class="container">
           <a class="navbar-brand d-lg-none" href="index.html">
-            <img src="" class="logo">
+            <img src="images/main-logo.png" class="logo">
           </a>
           <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
           <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
             <div class="offcanvas-header px-4 pb-0">
               <a class="navbar-brand" href="index.html">
-                <img src="" class="logo">
+                <img src="images/main-logo.png" class="logo">
               </a>
               <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar"></button>
             </div>
-
-
 
 
             <!-- 初め-->
             <div class="offcanvas-body">
               <ul id="navbar" class="navbar-nav w-100 d-flex justify-content-between align-items-center">
                 <a class="navbar-brand d-none d-lg-block me-0" href="index.html">
-                  <img src="" class="logo">
+                  <img src="images/main-logo.png" class="logo">
                 </a>
 
                 <ul class="list-unstyled d-lg-flex justify-content-between align-items-center">
                   <li class="nav-item">
-                    <a class="nav-link ms-0" href="about.html">TOP</a>
+                    <a class="nav-link ms-0" href="about.html">BINDEA</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link ms-0" href="shop.html">商品一覧</a>
@@ -116,135 +129,111 @@
               </ul>
             </div>
             <!-- 終わり-->
-
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
     </header>
 
-
-    <section id="testimonials" class="position-relative margin-xlarge">
+    <section class="single-product padding-large">
       <div class="container">
         <div class="row">
-          <div class="offset-md-2 col-md-8">
-            <h3 class="display-7 text-center mb-5" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-once="true"></h3>
-            <div class="review-content position-relative" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1500" data-aos-once="true">
-              <div class="swiper testimonial-swiper">
+          <div class="col-lg-6">
+            <div class="row product-preview">
+ 
+              <div class="swiper large-swiper overflow-hidden col-9">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide text-center d-flex justify-content-center">
-                    <div class="review-item">
-                    </div>
+                  <div class="swiper-slide">
+                    <img src="images/bmt45~60.jpg" alt="single-product" class="img-fluid">
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    
-    
-    <section id="about" data-aos="fade" data-aos-once="true">
-      <div class="container">
-        <div class="row position-relative">
-          <div class="col-lg-8">
-            <div class="image-holder zoom-out">
-              <img src="images/single-image3.jpg" alt="single" class="single-image img-fluid">
+          <div class="col-lg-6">
+            <div class="product-info">
+              <div class="element-header">
+                <h3 class="product-title my-3">キッチンマット-bmt45~60</h3>
+
+              </div>
+              <div class="product-price my-3">
+                <span class="fs-1 text-primary">¥4,000~¥7,000（税込）</span>
+              </div>
+              <p>【選べる12サイズ】</p>
+              <p>【少ない巻きぐせを実現】</p>
+              <p>【傷や衝撃をガードする】</p>
+              <p>【床暖房対応】</p>
+              <p>【はさみでカットOK】</p>
+              <p>【サッと拭くだけ】</p>
+              <hr>
+              <div class="cart-wrap">
+
+
+                <div class="product-quantity my-3">
+
+                  <div class="stock-button-wrap d-flex flex-wrap align-items-center">
+                    <div class="product-quantity">
+                      <div class="input-group product-qty" style="max-width: 150px;">
+                        <span class="input-group-btn">
+                          <button type="button" class="quantity-left-minus" data-type="minus" data-field="">
+                            <svg width="16" height="16"><use xlink:href="#minus"></use></svg>
+                          </button>
+                        </span>
+                        <input type="text" id="quantity" name="quantity" class="form-control input-number text-center" value="1" min="1" max="100" required>
+                        <span class="input-group-btn">
+                          <button type="button" class="quantity-right-plus" data-type="plus" data-field="">
+                            <svg width="16" height="16"><use xlink:href="#plus"></use></svg>
+                          </button>
+                        </span>
+                      </div>                          
+                    </div>
+                  </div>
+                </div>
+                <div class="action-buttons my-4 d-flex flex-wrap">
+                  <a href="#" class="btn btn-dark me-2 mb-1">カードに入れる</a>
+                  <a href="checkout.html" target="_blank" class="btn btn-dark">今すぐ買う</a>
+                </div>
+              </div>
+              <hr>
             </div>
           </div>
-          <div class="about-content col-lg-4 m-auto top-0 end-0 bottom-0">
-            <span class="title-accent fs-6 text-uppercase">企業理念</span><br>
-            <h5 class="py-3">永鑫株式会社は、<br>
-              生活と空間に自然と馴染むモノを通じて、
-              日々の暮らしに小さなしあわせを届けます。
-              
-              効率や常識にとらわれず、
-              本質を見極めたモノづくりを大切にし、<br>
-              適正な品質と価格で、丁寧にお届けします。<br>
-              
-              私たちは、<br>
-              世界のデザイン文化の発展に貢献してまいります。</p>
-          </div>
         </div>
       </div>
-    </section>
+    </section>   
+    
 
-
-    <section id="newsletter" class="bg-light padding-medium">
-      <div class="container">
-        <div class="newsletter">
-          <div class="row">
-            <div class="col-lg-6 col-md-12 title mb-4">
-              <h5>プロフィール</h2>
-                <br>
-                <table>
-                  <tbody>
-                    <tr>
-                      <td>社名：</td>
-                      <td>永鑫株式会社</td>
-                    </tr>
-                    <tr>
-                      <td>登録：</td>
-                      <td>2015年10月05日</td>
-                    </tr>
-                    <tr>
-                      <td>インボイス番号：</td>
-                      <td>T4380001023256</td>
-                    </tr>
-                    <tr>
-                      <td>本社：</td><br>
-                      <td><br>〒340-0114
-                        埼玉県幸手市東1丁目3番地20<br>
-                        TEL：070-9246-6995<br>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-            </div>
-          </div> 			
-        </div>
-      </div>
-    </section>
-
-
-
-
-
-
-    <footer id="footer" class="overflow-hidden padding-xlarge pb-0">
+    <section class="product-tabs">
       <div class="container">
         <div class="row">
-          <div class="footer-top-area pb-5">
-            <div class="row d-flex flex-wrap justify-content-between">
+          <div class="tabs-listing">
+            <nav>
+              <div class="nav nav-tabs d-flex justify-content-center py-3" id="nav-tab" role="tablist">
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 
-              <div class="col-lg-2 col-sm-6 pb-3" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1200" data-aos-once="true">
-                <div class="footer-menu">
-                  <h4 class="widget-title pb-2">about</h4>
-                  <ul class="menu-list list-unstyled">
-                    <li class="menu-item pb-2">
-                      <a href="shop.html">商品一覧</a>
-                    </li>
-                    <li class="menu-item pb-2">
-                      <a href="contact.html">サポート</a>
-                    </li>
-                    <li class="menu-item pb-2">
-                      <a href="rules.html">ご利用規約</a>
-                    </li>
-                  </ul>
-                </div>
+                <p>PVC 厚さ1.5mm</p>
               </div>
             </div>
           </div>
         </div>
-        <hr>
       </div>
-    </footer>
+    </section>
+    <br><br><br><br>
+
+
+
+
+
+
     <div id="footer-bottom">
       <div class="container">
         <div class="row d-flex flex-wrap justify-content-between">
           <div class="col-12">
             <div class="copyright">
-              <p>サイトは永鑫株式会社が運営するビンデア公式サイトです。掲載内容の無断転載及び配信は著作権侵害となります。<br>Copyright © Eishin Co., Ltd. All rights reserved.</p>
+              <p><br>Copyright © Eishin Co., Ltd. All rights reserved.</p>
             </div>
           </div>
         </div>
@@ -252,6 +241,7 @@
     </div>
 
 
+    
     
     <script src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
